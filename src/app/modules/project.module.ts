@@ -7,12 +7,13 @@ import { ShopPage } from "../pages/shop/shop.page"
 
 
 const Modules:any = []
-const Components:any = [HomePage,ShopPage,LoginPage]
+const pages:any = [HomePage,ShopPage,LoginPage]
+const Components:any = []
 
 @NgModule({
-    declarations: [...Components],
+    declarations: [...Components,...pages],
     imports: [CommonModule,...Modules],
-    exports: [...Components],
+    exports: [...Components,...pages],
     providers: [],
 })
 export class ProjectModule {}

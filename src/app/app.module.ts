@@ -8,7 +8,7 @@ import { SharedModule } from './shared/modules/shared.module';
 
 
 
-const modules: any = [SharedModule,ProjectModule]
+const Modules: any = [SharedModule,ProjectModule]
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ const modules: any = [SharedModule,ProjectModule]
   imports: [
     AppRoutingModule,
     BrowserModule,
-    ...modules
+    ...Modules
   ],
   exports:[
   ],
